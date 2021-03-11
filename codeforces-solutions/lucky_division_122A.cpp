@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int main ()
 {
     int n;
@@ -20,7 +19,6 @@ int main ()
     }
 
     flag == 1 ? cout << "YES" << endl : cout << "NO" << endl;
-
 
     return 0;
 }
