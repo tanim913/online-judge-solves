@@ -2,6 +2,7 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
+
     int n = Convert.ToInt32(Console.ReadLine());
     
     string[] values = new string[n];
@@ -17,7 +18,6 @@ class Program {
       int b = Convert.ToInt32(recValues[1]);
       int area = getMinArea(a,b);  
       Console.WriteLine(area);
-      
     }
   }
 
@@ -26,6 +26,7 @@ class Program {
     int side = 0;
     int len = Math.Max(a,b);
     int wid = Math.Min(a,b);
+    
     if(len>2*wid)
       {
         side = len;
