@@ -22,6 +22,14 @@ class Program
 
             }
         }
+      if(!f)
+      {
+        Console.WriteLine("Easy");
+      }
+      else
+      {
+        Console.WriteLine("Hard");
+      }
 
 
     }
