@@ -10,25 +10,20 @@ int main ()
         int marks;
         string names;
         cin >> names >> marks;
-        marks_map[marks].insert(names);
+        marks_map[-1 * marks].insert(names);
     }
 
-    auto &last  = --marks_map.end();
-
-    while(true)
+    for(auto std_mark_pr: marks_map)
     {
-
-        auto &name_set = last->second;
-        int mark = last->first;
+        auto &name_set = std_mark_pr.second;
+        int mark = std_mark_pr.first;
         for (auto student : name_set)
         {
-            cout << student << " " << mark << endl;
+            cout << student << " " << -1 * mark << endl;
         }
-        if (last == marks_map.begin())
-        {
-            break;
-        }
-        last --;
     }
+
     return 0;
 }
+
+
