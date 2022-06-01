@@ -31,7 +31,6 @@ class Solution
 public:
     int longestIncreasingPath(vector<vector<int>> &matrix)
     {
-
         rows = matrix.size();
         if (rows == 0)
             return 0;
@@ -47,7 +46,6 @@ public:
                 max_path = max(max_path, long_path(matrix, i, j));
             }
         }
-
         return max_path;
     }
 };
