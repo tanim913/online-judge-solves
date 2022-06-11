@@ -11,7 +11,7 @@ int r, c;
 vector <pair <int,int>> dir =
 {
     {1,0},{0,1},{0,-1},{-1,0},{-1,-1},{-1,1},{1,-1},{1,1}
-};
+}; // this is direction values
 
 bool valid(int i, int j)
 {
